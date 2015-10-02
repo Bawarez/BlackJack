@@ -23,7 +23,7 @@ function stop()
    dealer.push(getCard());
   show();
   if (points(dealer)>21 || points(dealer)<points(player))
-   alert('Поздравляю! Ты виграл!');
+   alert('Поздравляю! Ты выиграл!');
   else if (points(dealer)==points(player))
    alert('Вах! да тут пуш');
   else 
