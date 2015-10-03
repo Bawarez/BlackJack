@@ -1,0 +1,27 @@
+body{
+  background:#ccc;
+  text-align:center;
+}
+
+header{
+  font-size:400%;
+  color:red;
+  padding:20px;
+}
+
+#main{
+  width:60%;
+  margin:auto;
+  font-size:200%;
+  text-align:center;
+}
+
+#board {
+  position:relative;
+  box-sizing:border-box;
+  height:300px;
+  width:100%;
+  background:#3f9;
+  padding-top:110px;
+  border:3px solid brown;
+}

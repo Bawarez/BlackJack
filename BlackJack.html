@@ -3,16 +3,16 @@
 <head>
  <meta charset=utf-8>
  <title>Blackjack without whores</title>
+ <link rel="stylesheet" href="styles.css">
  <script src="bj.js"></script>
 </head>
 <body>
- <div>
-  <button onClick=newGame()>Раздать</button>
-  <button id=draw disabled onClick=draw()>Тянуть карту</button>
-  <button id=stop disabled onClick=stop()>Хаватит</button>
- </div>
- <div>
- <div id=board>
+ <header>Blackjack</header>
+ <div id=main>
+   <button onClick=newGame()>Раздать</button>
+   <button id=draw disabled onClick=draw()>Тянуть карту</button>
+   <button id=stop disabled onClick=stop()>Хаватит</button>
+   <div id=board></div>
  </div>
 </body>
 </html>
