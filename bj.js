@@ -19,8 +19,8 @@ function draw()
 
 function stop()
  {
-  while(points(dealer)<17)
-   dealer.push(getCard());
+  while(points(dealer)<17 && points(dealer)<=points(player))
+    dealer.push(getCard());
   show();
   if (points(dealer)>21 || points(dealer)<points(player))
    alert('Поздравляю! Ты выиграл!');
