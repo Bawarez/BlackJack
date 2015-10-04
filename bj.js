@@ -9,11 +9,8 @@ function newGame()
   dealer=[getCard(dealer)];  
   show('dealer');
   player=[];
-  for (var i=1; i<3; ++i)
-   {
-    player.push(getCard(player));
-    show('player');
-   }
+  draw();
+  draw();
  }
 
  
@@ -115,13 +112,12 @@ function points(hand)
         alert('Ты продул! Ололо!');
 	    $('draw').setAttribute('disabled','disabled');
 	    $('stop').setAttribute('disabled','disabled');
-       }},500);
+       }},300);
       break;
     case 'dealer' : 
 	  $(id).innerHTML+='<img src=cards/'+dealer[dealer.length-1][1]+'/'+dealer[dealer.length-1][0]+'.png>';
       break;	  
    }
-   console.log(points(player),points(dealer));
  }
 
  
