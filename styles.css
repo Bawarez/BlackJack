@@ -4,17 +4,21 @@ body{
 }
 
 header{
-  font-size:400%;
+  font-size:180%;
   color:red;
   padding:20px;
+}
+
+h1{
+  font-weight:normal;
 }
 
 #main{
   width:60%;
   margin:auto;
-  font-size:200%;
   text-align:center;
 }
+
 
 #board {
   position:relative;
@@ -22,6 +26,18 @@ header{
   height:300px;
   width:100%;
   background:#3f9;
-  padding-top:110px;
+  padding-top: 5ex;
   border:3px solid brown;
+}
+
+#player{
+  display:inline-block;
+  position:relative;
+  width:50%;
+}
+
+#dealer{
+  display:inline-block;
+  position:relative;
+  width:50%;
 }
