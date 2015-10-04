@@ -27,16 +27,18 @@ function draw()
 function stop()
  {
   while(points(dealer)<17 && points(dealer)<=points(player))
+   {
     dealer.push(getCard(dealer));
-  show('dealer');
-  if (points(dealer)>21 || points(dealer)<points(player))
+    show('dealer');
+   }   
+  setTimeout(function(){if (points(dealer)>21 || points(dealer)<points(player))
    alert('Поздравляю! Ты выиграл!');
   else if (points(dealer)==points(player))
    alert('Вах! да тут пуш');
   else 
    alert('Ты продул! Ололо!');
   $('draw').setAttribute('disabled','disabled');
-  $('stop').setAttribute('disabled','disabled');
+  $('stop').setAttribute('disabled','disabled');}, 500);
  }
  
  
@@ -102,7 +104,7 @@ function points(hand)
    {
     case 'player' : 
 	  $(id).innerHTML+='<img src=cards/'+player[player.length-1][1]+'/'+player[player.length-1][0]+'.png>';  
-	  if (points(player)==21)
+	  setTimeout(function(){if (points(player)==21)
        { 
         alert('Блэкджек! Ух-ху-ху!');
 	    $('draw').setAttribute('disabled','disabled');
@@ -113,13 +115,13 @@ function points(hand)
         alert('Ты продул! Ололо!');
 	    $('draw').setAttribute('disabled','disabled');
 	    $('stop').setAttribute('disabled','disabled');
-       }
+       }},500);
       break;
     case 'dealer' : 
 	  $(id).innerHTML+='<img src=cards/'+dealer[dealer.length-1][1]+'/'+dealer[dealer.length-1][0]+'.png>';
       break;	  
    }
-   
+   console.log(points(player),points(dealer));
  }
 
  
