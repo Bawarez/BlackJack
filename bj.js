@@ -31,7 +31,7 @@ function stop()
   setTimeout(function(){if (points(dealer)>21 || points(dealer)<points(player))
    alert('Поздравляю! Ты выиграл!');
   else if (points(dealer)==points(player))
-   alert('Вах! да тут пуш');
+   alert('Вах! Да тут пуш...');
   else 
    alert('Ты продул! Ололо!');
   $('draw').setAttribute('disabled','disabled');
