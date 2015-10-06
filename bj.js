@@ -49,7 +49,6 @@ function getCard(hand)
     deck.splice(i,1);
 	--n;
    }
-  console.log(card); 
   var mst=['h','d','s','c'];
   mstChk(dealer);
   mstChk(player);

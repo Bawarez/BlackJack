@@ -5,7 +5,7 @@ body{
 }
 
 header{
-  font-size:250%;
+  font-size:3.5ex;
   color:red;
 }
 
@@ -22,9 +22,7 @@ h1{
 
 #board {
   position:relative;
-  box-sizing:border-box;
-  height:300px;
-  font-size:150%;
+  min-height:300px;
   width:100%;
   background:#3f9;
   border:3px solid brown;
@@ -34,6 +32,10 @@ h1{
   display:inline-block;
   position:relative;
   width:50%;
+}
+
+#board>* {
+  vertical-align:top;
 }
 
 
